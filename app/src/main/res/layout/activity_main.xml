@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E91E63"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="199dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="cursive"
+        android:text="Tina's Cafe"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="273dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Dedicated to provide fantastic Korean cuisine"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/menubutton"
+        android:layout_width="118dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="150dp"
+        android:onClick="toMenu"
+        android:text="See Menu"
+        app:layout_constraintStart_toEndOf="@+id/directionstoorder"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/directionstoorder"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:text="To see the menu and select items to order please press this button"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
